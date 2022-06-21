@@ -1,26 +1,30 @@
-import React from 'react'
+import React from 'react';
 import { Home, ListAlt, CalendarMonthOutlined, Notifications } from '@mui/icons-material';
-
+import './Navbar.css';
 
 export const SidebarData = [
     {
-        title: "Home",
+        title: 'Home',
+        path: '/',
         icon: <Home />,
-        link: "/home"
+        className: 'nav-text'
     },
     {
-        title: "Notifications",
-        icon: <Notifications />,
-        link: "/notifications"
-    },
-    {
-        title: "Lists",
+        title: 'Lists',
+        path: '/lists',
         icon: <ListAlt />,
-        link: "/lists"
+        className: 'nav-text'
     },
     {
-        title: "Calendar",
+        title: 'Calendar',
+        path: '/calendar',
         icon: <CalendarMonthOutlined />,
-        link: "/calendar"
-    }
-];
+        className: 'nav-text'
+    },
+    {
+        title: 'Notifications',
+        path: '/notifications',
+        icon: <Notifications />,
+        className: 'nav-text'
+    },
+]

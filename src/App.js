@@ -1,17 +1,19 @@
-import './App.css';
-import Sidebar from "./Components/Sidebar"
-import Topbar from "./Components/Topbar"
-import HomeDashboard from './Components/HomeDashboard';
+import "./App.css"
+import Navbar from "./Components/Navbar"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      <Sidebar />
-      <div id="Main">
-        <Topbar />
-        <HomeDashboard />
+
+    <Router>
+      <Navbar />
+      <div className="MainBody">
+        
       </div>
-    </div>
+      <Routes>
+        <Route path='/' />
+      </Routes>
+    </Router>
   );
 }
 
