@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { Menu, Close } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
-import './Navbar.css';
+import './Shell.css';
 import { IconContext } from 'react-icons';
 
-function Navbar() {
+function Shell() {
   const [sidebar, setSidebar] = useState(false);
-
+  const [currentPage, setCurrentPage] = useState('/');
   const showSidebar = () => setSidebar(!sidebar);
 
   return (
@@ -37,9 +37,13 @@ function Navbar() {
             })}
           </ul>
         </nav>
+        <div className={sidebar ? 'main-body active' : 'main-body'}>
+          HELLO THERE!
+          <currentPage />
+        </div>
       </IconContext.Provider>
     </>
   );
 }
 
-export default Navbar;
+export default Shell;

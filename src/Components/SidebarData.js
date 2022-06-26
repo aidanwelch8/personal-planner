@@ -1,6 +1,6 @@
 import React from 'react';
 import { Home, ListAlt, CalendarMonthOutlined, Notifications } from '@mui/icons-material';
-import './Navbar.css';
+import './Shell.css';
 
 export const SidebarData = [
     {

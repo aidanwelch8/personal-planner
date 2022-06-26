@@ -1,15 +1,13 @@
 import "./App.css"
-import Navbar from "./Components/Navbar"
+import "./Components/Shell.css"
+import Shell from "./Components/Shell"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
 
     <Router>
-      <Navbar />
-      <div className="MainBody">
-        
-      </div>
+      <Shell />
       <Routes>
         <Route path='/' />
       </Routes>
